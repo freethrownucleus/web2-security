@@ -4,11 +4,11 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon src/app.js",
+        "dev": "nodemon src/web.js",
         "build": "npm run clean && npm run copy-files",
         "copy-files": "cp -r src/public dist/public && cp -r src/views dist/views",
         "clean": "rm -rf dist",
-        "start": "node dist/app.js"
+        "start": "node dist/web.js"
     },
     "keywords": [],
     "author": "",
