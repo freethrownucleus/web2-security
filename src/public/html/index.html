@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/index.css" />
+        <title>2nd Project - Web2</title>
+        <link rel="icon" type="image/png" href="/images/project.png">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="centered-title">2nd Project</h1>
+            <hr class="dashed-line">
+            <p>
+                This application serves as a demonstration platform highlighting two distinct security breach methods:
+            </p>
+            <ol>
+                <li>
+                    <a href="/xss" title="Reflected XSS">Reflected XSS</a>
+                    <p>Reflected Cross-Site Scripting (XSS) is a type of security vulnerability on web pages that enables an attacker to inject malicious scripts or code onto a page, which is then visible to other users. "Reflected" means that the malicious code is injected through the application and returned to the user via server responses such as messages, searches, or queries. For example, if a web page doesn't validate or filter user input, an attacker can inject malicious JavaScript code into a URL, which is then displayed to other users. When other users click on that link, the malicious code executes, allowing the attacker to steal sessions, user data, or manipulate the page's content. Protection against reflected XSS involves filtering and validating user input, encoding data before displaying it on the page, and using security measures such as Content Security Policy (CSP) to limit the execution of malicious code. Regular software updates and training for the development team are also crucial in preventing this type of attack.</p>
+                    
+                </li>
+                <li>
+                    <a href="/sde" title="Sensitive Data Exposure">Sensitive Data Exposure</a>
+                    <p>Sensitive data exposure refers to the scenario where critical information, such as passwords or personal details, becomes accessible to unauthorized individuals or systems. Within the realm of cryptography, MD5 (Message Digest Algorithm 5) and bcrypt represent two different approaches to secure data storage.
+                        MD5 is a cryptographic function that generates a 128-bit (16-byte) hash value from input data. However, MD5 is not recommended for security purposes due to vulnerabilities to collision attacks, where two different messages can produce the same MD5 hash. This means that while MD5 is useful for data integrity checks or quick matching verification, it's not secure for storing passwords or sensitive information.
+                        On the other hand, bcrypt is a password hashing and encryption algorithm. It's designed for secure password storage, ensuring that sensitive data like passwords are irreversibly transformed into a hashed format. This process includes salting and multiple iterations, making it highly resistant to brute-force attacks and ensuring better protection for sensitive information.</p>
+                </li>
+            </ol>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,107 @@
+.button {
+    display: inline-block;
+    border: none;
+    font-size: 1.1em;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: #007bff; 
+    font-weight: normal;
+    color: #fff; 
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    width: 80px; 
+    text-align: center; 
+}
+
+
+a {
+    color: var(--primary-color); 
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s ease;
+    width: max-content;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+.users-container {
+    position: relative;
+    min-height: 80vh;
+    background-color: black;
+    overflow: auto;
+}
+
+.users-table {
+    width: 100%;
+}
+
+.users-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.user-container {
+    outline: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+.user-prop {
+    overflow-wrap: break-word;
+}
+
+.user-prop > span {
+    font-weight: 700;
+    color: var(--primary-color); 
+}
+
+.users-table {
+    border-collapse: collapse;
+}
+
+
+.users-table th,
+.users-table td {
+    border: 1px solid white; 
+    padding: 20px 50px; 
+}
+  
+.users-table th:nth-child(1),
+.users-table td:nth-child(1) {
+    text-align: center;
+}
+
+
+.users-table th:nth-child(2),
+.users-table td:nth-child(2) {
+    text-align: center;
+}
+
+
+.users-table th:nth-child(3),
+.users-table td:nth-child(3) {
+    text-align: center;
+}
+
+
+.users-table th:nth-child(4),
+.users-table td:nth-child(4) {
+    text-align: center;
+}
+
+
+.users-table th:nth-child(5),
+.users-table td:nth-child(5) {
+    text-align: center;
+}
+
+
+.users-table th:nth-child(6),
+.users-table td:nth-child(6) {
+    text-align: center;
+}
+
+  

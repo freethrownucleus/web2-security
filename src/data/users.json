@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "username": "lisa_smith",
+        "email": "lisa.smith@emailprovider.com",
+        "password": "p@ssw0rd!",
+        "job": "Graphic Designer",
+        "married": "yes"
+    },
+    {
+        "id": 2,
+        "username": "max_coder",
+        "email": "maxcoder@samplemail.com",
+        "password": "CodingRocks!",
+        "job": "Web Developer",
+        "married": "no"
+    },
+    {
+        "id": 3,
+        "username": "emily_89",
+        "email": "emily89@domain.com",
+        "password": "Sunshine22",
+        "job": "Marketing Manager",
+        "married": "yes"
+    },
+    {
+        "id": 4,
+        "username": "tech_guru21",
+        "email": "tg21@exampleemail.com",
+        "password": "myTechLife#1",
+        "job": "IT Consultant",
+        "married": "no"
+    },
+    {
+        "id": 5,
+        "username": "oliver_designs",
+        "email": "oliver.designs@hotmail.com",
+        "password": "ArtisticMind99",
+        "job": "Illustrator",
+        "married": "yes"
+    },
+    {
+        "id": 6,
+        "username": "codingninja32",
+        "email": "codingninja32@domainmail.com",
+        "password": "CodeMaster123",
+        "job": "Software Developer",
+        "married": "no"
+    },
+    {
+        "id": 7,
+        "username": "sophie.designs",
+        "email": "sophie.designs@emailhost.com",
+        "password": "Artistic_Pass55",
+        "job": "UI/UX Designer",
+        "married": "yes"
+    },
+    {
+        "id": 8,
+        "username": "alexander87",
+        "email": "alexander87@gmail.com",
+        "password": "alexRules!23",
+        "job": "Financial Analyst",
+        "married": "no" 
+    },
+    {
+        "id": 9,
+        "username": "anna_baker",
+        "email": "anna.baker4@yahoo.com",
+        "password": "BakingQueen#1",
+        "job": "Pastry Chef",
+        "married": "no" 
+    },
+    {
+        "id": 10,
+        "username": "sam_cook",
+        "email": "sam.cook@uni.com",
+        "password": "CookinPassion;88",
+        "job": "Chef",
+        "married": "yes" 
+    }
+]

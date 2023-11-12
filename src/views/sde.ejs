@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/sde.css" />
+    <title>SDE</title>
+    <link rel="icon" type="image/png" href="/images/project.png">
+    <style>
+        .instructions {
+            font-size: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="button">Back</a>
+        <h1>
+            Sensitive Data Exposure
+        </h1>
+        <p class="instructions">
+            <span>Instructions<br /></span>
+            
+            Test by toggling the vulnerability flag to <strong>enabled</strong> and <strong>disabled</strong> in the code, verifying that sensitive columns are hidden when vulnerability is <strong>disabled</strong> and visible when <strong>enabled</strong>.
+        </p>
+        
+        <div class="separator"></div>
+        <form action="/sde/users" method="get">
+            <div class="vulnerability-input">
+                Vulnerability:
+                <input type="radio" id="vulnerability_disabled" name="vulnerability" value="disabled" checked/>
+                <label for="vulnerability_disabled" title="Vulnerability">disabled</label>
+                <input type="radio" id="vulnerability_enabled" name="vulnerability" value="enabled" />
+                <label for="vulnerability_enabled" title="Vulnerability">enabled</label>
+                <button type="submit" title="Users Data">
+                    Check
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

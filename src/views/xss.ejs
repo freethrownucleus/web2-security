@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/xss.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <title>XSS</title>
+        <link rel="icon" type="image/png" href="/images/project.png">
+    </head>
+    <body>
+        <div class="container">
+            <a href="/" class="button" title="Back">Back</a>
+            <h1> Reflected XSS</h1>
+            <p class="instructions">
+                <span>Instructions<br /></span>
+                Test the application by entering, for example, either
+                <span>&lt;script&gt;alert("Attack!")&lt;/script&gt;</span>
+
+                or
+                <span>&lt;img src="https://www.ebay.com/accordion.png" onerror="alert(document.cookie)" /&gt;</span>
+
+                in the text field, with and without using the vulnerability option.
+            </p>
+            <div class="separator"></div>
+            <form action="/xss" method="get">
+                <div class="vulnerability-input">
+                    <input
+                        type="checkbox"
+                        id="vulnerability"
+                        name="vulnerability"
+                    />
+                    <label for="vulnerability" >Vulnerability</label
+                    >
+                </div>
+                <div class="image-input">
+                    <label for="imageSrc" title="Type in">Enter a script or an image URL you want to check:</label>
+                    <input type="text" name="imageSrc" id="imageSrc" title="Type in" />
+                    <button type="submit" title="Show">Check</button>
+                </div>
+            </form>
+        </div>
+        <% if(imageSrc) {%>
+        <img src="<%= imageSrc || '/path/to/default/image.jpg' %>" alt="Perhaps benevolent script. / Cannot load the image ... Please try again!" />
+        <% } %>
+    </body>
+</html>

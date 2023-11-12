@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "username": "lisa_smith",
+        "email": "lisa.smith@emailprovider.com",
+        "password": "ee7161e0fe1a06be63f515302806b34437563c9e",
+        "job": "Graphic Designer",
+        "married": "yes"
+    },
+    {
+        "id": 2,
+        "username": "max_coder",
+        "email": "maxcoder@samplemail.com",
+        "password": "ae1c78743daa2df35b1c5e6826ba79429c5badd0",
+        "job": "Web Developer",
+        "married": "no"
+    },
+    {
+        "id": 3,
+        "username": "emily_89",
+        "email": "emily89@domain.com",
+        "password": "e0f94d2f4aaf0dbd579c44ffebcb06d7d5fa72ef",
+        "job": "Marketing Manager",
+        "married": "yes"
+    },
+    {
+        "id": 4,
+        "username": "tech_guru21",
+        "email": "tg21@exampleemail.com",
+        "password": "d09899ffbff8d6c6b89d10ccc8a74191764a2c35",
+        "job": "IT Consultant",
+        "married": "no"
+    },
+    {
+        "id": 5,
+        "username": "oliver_designs",
+        "email": "oliver.designs@hotmail.com",
+        "password": "cd33d386b8398e4394c913814a52d5d7cbb7268b",
+        "job": "Illustrator",
+        "married": "yes"
+    },
+    {
+        "id": 6,
+        "username": "codingninja32",
+        "email": "codingninja32@domainmail.com",
+        "password": "bfe05c35a3669688f3179486d0cbb32bc937176f",
+        "job": "Software Developer",
+        "married": "no"
+    },
+    {
+        "id": 7,
+        "username": "sophie.designs",
+        "email": "sophie.designs@emailhost.com",
+        "password": "bc92472c565c0d55111ee68be1640a388a988429",
+        "job": "UI/UX Designer",
+        "married": "yes"
+    },
+    {
+        "id": 8,
+        "username": "alexander87",
+        "email": "alexander87@gmail.com",
+        "password": "c9ac4dc1df3496d50c9963c37a9ec63e93d21af7",
+        "job": "Financial Analyst",
+        "married": "no" 
+    },
+    {
+        "id": 9,
+        "username": "anna_baker",
+        "email": "anna.baker4@yahoo.com",
+        "password": "0f31b4f07e54ad24a8aa9e36396e53a8c0c4f676",
+        "job": "Pastry Chef",
+        "married": "no" 
+    },
+    {
+        "id": 10,
+        "username": "sam_cook",
+        "email": "sam.cook@uni.com",
+        "password": "70bbb6f20c9fd22cbd68b84deabe7556098054c8",
+        "job": "Chef",
+        "married": "yes" 
+    }
+]
+

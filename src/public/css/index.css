@@ -1,0 +1,38 @@
+a {
+    color: white;
+    font-weight: 1000;
+    transition: all 0.2s ease;
+}
+a:hover {
+    opacity: 0.6;
+}
+img {
+    padding: 20px 20px 0px 0px;
+    height: 60px;
+}
+
+ul {
+    margin: 10px 20px;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+ol li {
+    text-align: center;
+}
+
+ol li a {
+    display: block;
+    font-weight: bold;
+}
+
+ol li p {
+    text-align: left;
+}
+
+.container p:first-of-type {
+    margin-bottom: 60px;
+}

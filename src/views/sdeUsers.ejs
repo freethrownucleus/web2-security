@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/dataExposure.css" />
+    <title>Users</title>
+    <link rel="icon" type="image/png" href="/images/project.png">
+</head>
+<body>
+    <div class="container">
+        <a href="/sde" class="button">Back</a>
+        <h1>Users Information</h1>
+        <div class="separator"></div>
+        <div class="users-container">
+            <table class="users-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>User</th>
+                        <th>Email</th>
+                        <% if (vulnerability) { %>
+                            <th>Password (SHA-1)</th>
+                            <th>Job</th>
+                            <th>Married</th>
+                        <% } %>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for (user of users) { %>
+                        <tr class="user-row">
+                            <td><%= user.id %></td>
+                            <td><%= user.username %></td>
+                            <td><%= user.email %></td>
+                            <% if (vulnerability) { %>
+                                <td><%= user.password %></td>
+                                <td><%= user.job %></td>
+                                <td><%= user.married %></td>
+                            <% } %>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
+        <div class="scrollbar">
+        </div>
+        
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const isVulnerable = '<%= vulnerability %>' === 'enabled';
+            if (!isVulnerable) {
+                const tableHeaders = document.querySelectorAll('.users-table th');
+                tableHeaders.forEach(header => {
+                    if (header.textContent === 'Password (SHA-1)' || header.textContent === 'Job' || header.textContent === 'Married') {
+                        header.style.display = 'none';
+                    }
+                });
+
+                const tableCells = document.querySelectorAll('.users-table td:nth-child(4)');
+                tableCells.forEach(cell => {
+                    cell.style.display = 'none';
+                });
+
+                const tableRows = document.querySelectorAll('.users-table tr');
+                tableRows.forEach(row => {
+                    const cells = row.querySelectorAll('td');
+                    cells.forEach((cell, index) => {
+                        if (index === 4 || index === 5) {
+                            cell.style.border = 'none';
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

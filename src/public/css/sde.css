@@ -1,0 +1,71 @@
+
+.instructions > span:nth-child(1) {
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.vulnerability-input {
+    display: flex;
+    align-items: center;
+}
+
+.vulnerability-input button {
+    margin-left: auto;
+}
+
+
+.vulnerability-input > input:hover,
+.vulnerability-input > label:hover {
+    cursor: pointer;
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    font-size: 1.1em;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: #007bff; 
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    width: 80px; 
+    text-align: center; 
+}
+
+.button:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+    color: #333;
+}
+
+
+
+button {
+    border: none;
+    font-size: 1.1em;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: #f4f4f4;
+    filter: brightness(95%);
+    transition: all 0.3s ease;
+}
+
+
+button {
+    color: #fff; 
+    background-color: #007bff; 
+    margin-left: auto;
+}
+
+
+button:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+    color: #333;
+}

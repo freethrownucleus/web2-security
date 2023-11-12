@@ -1,0 +1,149 @@
+body {
+    overflow-x: hidden;
+}
+
+a {
+    color: blue;
+    transition: 0.3s ease-in-out;
+    width: max-content;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+    color: #333;
+}
+
+.instructions,
+.instructions span {
+    font-size: 1.1em;
+}
+
+
+.instructions > span:nth-child(1) {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.instructions > span:nth-child(2) {
+    background-color: red;
+    color: white;
+    word-break: break-all;
+    font-weight: bold;
+}
+
+.instructions > span:nth-child(3) {
+    background-color: darkred;
+    color: white;
+    word-break: break-all;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.vulnerability-input > input:hover,
+.vulnerability-input > label:hover {
+    cursor: pointer;
+}
+
+.image-input {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 8px;
+}
+
+.image-input > label {
+    font-weight: 600;
+    font-size: 1em;
+    margin-right: 8px; 
+}
+
+.image-input > input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    flex: 1; 
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    font-size: 1.1em;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: #007bff; 
+    color: #fff; 
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    width: 80px; 
+    text-align: center; 
+}
+
+.button:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+    color: #333;
+}
+
+#warning {
+    flex-direction: column;
+    border-radius: var(--border-radius);
+    max-width: 100%; 
+    padding: 50px;
+    margin: 50px 50px 50px 50px;
+    background-color: red;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 50px;
+}
+
+
+button {
+    border: none;
+    font-size: 1.1em;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: #f4f4f4;
+    filter: brightness(95%);
+    transition: all 0.3s ease;
+}
+
+
+button {
+    color: #fff; 
+    background-color: #007bff; 
+}
+
+button:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+    color: #333;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    display: grid;
+    margin: 0 0 0 50px; 
+    overflow: hidden;
+}
+
+
+img[alt="Perhaps benevolent script. / Cannot load the image ... Please try again!"] {
+    background-color: black; 
+    max-width: 680px;
+    padding: 10px;
+    margin: 0 0 0 50px;
+    color: #fff; 
+}
+
