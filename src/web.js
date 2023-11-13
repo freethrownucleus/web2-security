@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
     if (alertCheck.test(idFake)) {
         res.send('Potencionally malicious code found!');
     } else {
-        res.cookie('POSSIBLE COOKIE POISONING!', `${idFake}`, { httpOnly: false })
+        res.cookie('POSSIBLE COOKIE POISONING!', `${"bug"}`, { httpOnly: false })
         res.sendFile('index.html', { root: __dirname + '/public/html' })
     }
 })
